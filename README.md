@@ -19,7 +19,7 @@ The core functionality of **Shp2gmns** is to **convert shapefiles into GMNS-comp
 
 3. **Conversion to GMNS Format**  
    - The processed road network data is structured into GMNS-compatible CSV files.
-   - This includes files like `nodes.csv`, `links.csv`, and `segments.csv`.
+   - This includes files like `nodes.csv`and `links.csv`.
 
 4. **Output Storage**  
    - The final GMNS network files are saved in the specified output directory.
