@@ -2,8 +2,8 @@ import pandas as pd
 import geopandas as gpd
 
 # Define the shapefile path and output CSV path
-shapefile_path = "freeflow_nodes.shp"
-csv_path = r"results\node.csv"
+shapefile_path = "freeflow_links.shp"
+csv_path = r"results\link.csv"
 
 try:
     # Read the shapefile
