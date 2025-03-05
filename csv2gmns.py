@@ -51,6 +51,12 @@ for col in node_gmns_columns:
     if col not in node_df.columns:
         node_df[col] = None  # Add missing columns with null values
 
+# Define the node threshold for assigning zone_id
+ZONE_ID_THRESHOLD = 1474
+
+# Assign zone_id based on node_id threshold
+node_df["zone_id"] = node_df["node_id"].apply(lambda x: x if x <= ZONE_ID_THRESHOLD else 0)
+
 # Reorder columns to match GMNS specification
 link_df = link_df[link_gmns_columns]
 node_df = node_df[node_gmns_columns]
