@@ -35,11 +35,11 @@ The `test_sample/Bay_Area/` directory contains a sample road network extracted f
 - Attributes such as road classification, number of lanes, and speed limits are available.
 - This sample demonstrates how **Shp2gmns** can handle large-scale urban road networks.
 
+---
+
 ## **Configuring the Settings File for Custom Network Conversion**
 
 The **settings file** (`bayarea_setting.csv`) is used to map fields from the input shapefile (or CSV) to GMNS-compliant formats. Users can modify this file to suit their own transportation network datasets.
-
----
 
 ### **📂 Settings File Structure**
 The settings file consists of **three sections**:
