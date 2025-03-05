@@ -39,6 +39,7 @@ The `test_sample/Bay_Area/` directory contains a sample road network extracted f
 
 The **settings file** (`bayarea_setting.csv`) is used to map fields from the input shapefile (or CSV) to GMNS-compliant formats. Users can modify this file to suit their own transportation network datasets.
 
+---
 
 ### **📂 Settings File Structure**
 The settings file consists of **three sections**:
