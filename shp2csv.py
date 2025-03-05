@@ -1,18 +1,18 @@
 import pandas as pd
 import geopandas as gpd
 
-# Define the shapefile path and output CSV path
-shapefile_path = "freeflow_links.shp"
-csv_path = r"results\link.csv"
+# Define the input shapefile path and output CSV path
+shapefile_path = "freeflow_links.shp"  # Path to input shapefile
+csv_path = r"results\link.csv"  # Path to output CSV file
 
 try:
-    # Read the shapefile
+    # Read the shapefile into a GeoDataFrame
     gdf = gpd.read_file(shapefile_path)
 
-    # Convert geometry to WKT format
+    # Convert geometry to WKT format for easy storage in CSV
     gdf["geometry"] = gdf["geometry"].apply(lambda geom: geom.wkt if geom else None)
 
-    # Save to CSV
+    # Save the transformed data to CSV
     gdf.to_csv(csv_path, index=False)
     print(f"Converted {shapefile_path} to {csv_path} successfully.")
 
